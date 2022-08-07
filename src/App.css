@@ -19,6 +19,7 @@ button {
   color: inherit;
   border-width: 0px;
   max-height: 520px;
+  max-width: 250px;
   justify-content: center;
 }
 
@@ -35,6 +36,13 @@ button {
   display: flex;
   flex-direction: row;
   padding: 12px;
+}
+
+.MuiBox-root .card {
+  max-width: 50%;
+  max-height: 95%;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 #searchform {
@@ -62,19 +70,20 @@ button {
 }
 
 #expanded {
-  margin: 3px;
+  display: flex;
   padding: 3px;
   overflow: auto;
 }
 
-.popcard {
+#popcard {
   max-width: 250px;
 }
 
 .card {
   display: flex;
-  flex-direction: column;
-  max-height: 500px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 520px;
   margin: 3px;
   align-items: center;
   padding: 3px;
@@ -128,15 +137,26 @@ div p {
     flex-direction: row;
     padding: 12px;
     width: 75%;
-    height: 75%;
+    height: 80%;
+  }
+
+  .button {
+    width: 75%;
   }
 
   .card {
-    max-width: 50%;
+    max-width: 80%;
   }
 
-  .popcard {
-    max-width: 50%;
+  .MuiBox-root .card {
+    max-width: 55%;
+    max-height: 98%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #popcard {
+    max-width: 75%;
     display: flex;
     flex-direction: column;
     max-height: 500px;

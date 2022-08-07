@@ -4,7 +4,7 @@ import CardPoster from './CardPoster';
 function Card(props) {
   
     return (
-        <div className="popcard">
+        <div className="card">
             <h3 className="movieTitle">{props.movie.Title}</h3>
             <CardPoster movimg = {props.movie.Poster}></CardPoster>
             <p id="description"><b>description:  </b>{props.movie.Plot} <br></br>

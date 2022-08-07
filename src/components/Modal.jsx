@@ -28,7 +28,7 @@ function ModalMovie (props) {
         aria-describedby="modal-modal-description"
         >
             <Box sx={style}>
-                <Card movie = {props.movie}></Card>
+                <Card id="modalcard" movie = {props.movie}></Card>
                 <div id = "expanded">
                     <p>
                     <b>Main actors: </b><br></br>{props.movie.Actors}<br></br>

@@ -41,7 +41,7 @@ function Movies(props) {
                 }}
                   screen="true" 
                   >  
-                  <Card 
+                  <Card className="popcard"
                     movie = {movie} key={movie.imdbID}>{movie.Title}
                   </Card>
                 </button>  )

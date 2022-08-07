@@ -3,7 +3,7 @@ import React from "react";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
-// import axios from "axios";
+import axios from "axios";
 
 
 
@@ -15,7 +15,7 @@ function SearchBar (props) {
     const textInput = useRef(null);
 
     async function getMovie(moviequery) {
-        const result = await fetch(`/movie/${moviequery}` 
+        const result = await axios(`/movie/${moviequery}` 
         );
         const movieResult = result.data;
         console.log(result.data);

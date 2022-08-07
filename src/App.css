@@ -1,16 +1,101 @@
-.App {
-  text-align: center;
+#screen {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: auto;
+  margin: auto;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background: white;
+  text-decoration: none;
+  color: inherit;
+  border-width: 0px;
+  max-height: 470px;
+}
+
+.MuiFormControl-root {
+  width: 80%;
+}
+
+.MuiBox-root {
+  display: flex;
+  flex-direction: row;
+}
+
+#searchform {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  top: 0px;
+  position: fixed;
+  z-index: 2;
+}
+
+#movies {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: auto;
+  margin: auto;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* #movies {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: auto;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: center;
+} */
+
+#expanded {
+  margin: 3px;
+  padding: 3px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  margin: 3px;
+  align-items: center;
+  padding: 3px;
+}
+
+.movieTitle {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+}
+
+.imgcard {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+h3 {
+  margin: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+div p {
+  overflow: autp;
 }
 
 .App-header {
@@ -26,13 +111,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

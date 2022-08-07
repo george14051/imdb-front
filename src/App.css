@@ -1,6 +1,6 @@
 #screen {
   display: flex;
-  max-width: 1200px;
+  max-width: 1500px;
   align-items: center;
   flex-wrap: wrap;
   padding: auto;
@@ -8,21 +8,33 @@
   justify-content: center;
 }
 
+#description {
+  margin: 2px;
+}
+
 button {
+  display: flex;
   background: white;
   text-decoration: none;
   color: inherit;
   border-width: 0px;
-  max-height: 470px;
+  max-height: 520px;
+  justify-content: center;
 }
 
 .MuiFormControl-root {
   width: 80%;
 }
 
+.br {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
 .MuiBox-root {
   display: flex;
   flex-direction: row;
+  padding: 12px;
 }
 
 #searchform {
@@ -32,6 +44,7 @@ button {
   justify-content: center;
   margin-bottom: 5px;
   margin-top: 0px;
+  padding-top: 7px;
   top: 0px;
   position: fixed;
   z-index: 2;
@@ -39,7 +52,7 @@ button {
 
 #movies {
   display: flex;
-  max-width: 1200px;
+  max-width: 80%;
   align-items: center;
   flex-wrap: wrap;
   padding: auto;
@@ -47,29 +60,25 @@ button {
   justify-content: center;
   margin-top: 50px;
 }
-/* #movies {
-  display: flex;
-  max-width: 1200px;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: auto;
-  margin: auto;
-  margin-top: 50px;
-  justify-content: center;
-} */
 
 #expanded {
   margin: 3px;
   padding: 3px;
+  overflow: auto;
+}
+
+.popcard {
+  max-width: 250px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 200px;
+  max-height: 500px;
   margin: 3px;
   align-items: center;
   padding: 3px;
+  overflow: auto;
 }
 
 .movieTitle {
@@ -85,7 +94,7 @@ button {
 }
 
 h3 {
-  margin: auto;
+  margin: 1px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -95,7 +104,7 @@ h3 {
 }
 
 div p {
-  overflow: autp;
+  overflow: auto;
 }
 
 .App-header {
@@ -111,4 +120,28 @@ div p {
 
 .App-link {
   color: #61dafb;
+}
+
+@media screen and (max-width: 600px) {
+  .MuiBox-root {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    width: 75%;
+    height: 75%;
+  }
+
+  .card {
+    max-width: 50%;
+  }
+
+  .popcard {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    margin: 3px;
+    align-items: center;
+    padding: 3px;
+  }
 }
